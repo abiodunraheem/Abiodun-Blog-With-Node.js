@@ -1,0 +1,24 @@
+{
+  "name": "abiodun-blog-with-node",
+  "version": "1.0.0",
+  "description": "MY Awesome Blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abiodunraheem/Abiodun-Blog-With-Node.js.git"
+  },
+  "author": "Abiodun Raheem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abiodunraheem/Abiodun-Blog-With-Node.js/issues"
+  },
+  "homepage": "https://github.com/abiodunraheem/Abiodun-Blog-With-Node.js#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21"
+  }
+}
