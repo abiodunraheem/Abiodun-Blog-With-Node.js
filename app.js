@@ -7,7 +7,15 @@ app.set('view engine', 'ejs')
 app.listen(3000)
 
 app.get('/', (req, res) => {
-    res.render('index', {title: 'Home'})
+    const blogs = [
+        {title: 'Things fall apart', snippet: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolores illum at rerum alias est!'},
+        {title: 'No longer at ease', snippet: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolores illum at rerum alias est!'},
+        {title: 'The man died', snippet: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolores illum at rerum alias est!'},
+        {title: 'The lion and rthe jewel', snippet: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolores illum at rerum alias est!'},
+        {title: 'The lion of bourdillon', snippet: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolores illum at rerum alias est!'},
+        {title: 'A man call Achiebs', snippet: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolores illum at rerum alias est!'}
+    ]
+    res.render('index', {title: 'Home', blogs})
 })
 
 app.get('/about', (req, res) => {
